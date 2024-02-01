@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+input {
+  padding: 15px 20px;
+  width: 400px;
+  font-size: 15px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+button {
+  padding: 15px 20px;
+
+  font-size: 15px;
+  border: none;
+  background-color: #1c7ed6;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #478fce;
+}
+.todo-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid rgb(233, 236, 239);
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  padding: 16px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.todo-boxes p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.todo-boxes .fa-trash-can {
+  color: red;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  input {
+    width: 300px;
+  }
+  .todo-boxes{
+    width: 200;
+    padding: 4px 20px;
+  }
+  .form-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
